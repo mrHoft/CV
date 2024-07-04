@@ -26,14 +26,14 @@
   --dia-size: 64px;
   --skill-html: 75;
   --skill-css3: 75;
-  --skill-js: 60;
+  --skill-js: 75;
   --skill-node: 50;
-  --skill-react: 60;
-  --skill-parcer: 60;
+  --skill-react: 85;
+  --skill-parcer: 75;
   --skill-test: 40;
   --skill-sql: 30;
   --skill-docker: 75;
-  --skill-linux: 60;
+  --skill-linux: 75;
 }
 
 html {
@@ -74,8 +74,9 @@ body {
 main,
 header,
 footer {
+  box-sizing: border-box;
   margin: 0;
-  padding: 1rem;
+  padding: 1em;
   width: 100%;
   background-color: var(--bg-teriary);
 }
@@ -88,6 +89,7 @@ article {
   padding: 1.5rem;
 }
 footer {
+  padding: 1em 3em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
