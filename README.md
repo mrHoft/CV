@@ -1,2 +1,8 @@
-[rsschool-cv](https://mrHoft.github.io/rsschool-cv/cv)<br/>
-[rsschool-cv-html](https://mrhoft.github.io/rsschool-cv/)<br/>
+## My CV
+- Core JS
+- Custom templator
+- Preloader
+
+[deploy](https://mrhoft.github.io/cv/)
+
+[markdown](https://mrHoft.github.io/cv/cv)
