@@ -1,0 +1,27 @@
+{
+  "tasks": {
+    "dev": "vite --clearScreen false --port 3000",
+    "build": "vue-tsc -b && vite build"
+  },
+  "imports": {
+  },
+  "lint": {
+    "include": ["src/"],
+    "exclude": ["src/testdata/"],
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"],
+      "exclude": ["no-unused-vars"]
+    }
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/"],
+    "exclude": ["src/testdata/"]
+  }
+}
