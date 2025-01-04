@@ -19,8 +19,8 @@ export const menu: Record<string, { title: string; icon: string }> = {
     title: 'Education',
     icon: '/icons/edu.svg',
   },
-  example: {
-    title: 'Examles',
+  examples: {
+    title: 'Examples',
     icon: '/icons/slider.svg',
   },
 }

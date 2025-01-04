@@ -1,7 +1,7 @@
 <template>
-<article id="example">
-  <h2>Code examles:</h2>
   <pre class="code">
+  <span style="color: #339933;">// Code examles:</span>
+  &nbsp;
   <span style="color: #378dd6; font-weight: bold;">function</span> createPhoneNumber<span style="color: #8655d6;">&#40;</span>numbers<span style="color: #8655d6;">&#41;</span> <span style="color: #8655d6;">&#123;</span>
     <span style="color: #378dd6; font-weight: bold;">return</span> numbers.<span style="color: #92923d;">reduce</span><span style="color: #8655d6;">&#40;</span><span style="color: #8655d6;">&#40;</span>acc<span style="color: #339933;">,</span> n<span style="color: #8655d6;">&#41;</span> <span style="color: #339933;">=&gt;</span> acc.<span style="color: #92923d;">replace</span><span style="color: #8655d6;">&#40;</span><span style="color: #ce834a;">'x'</span><span style="color: #339933;">,</span> n<span style="color: #8655d6;">&#41;</span><span style="color: #339933;">,</span> <span style="color: #ce834a;">'(xxx) xxx-xxxx'</span><span style="color: #8655d6;">&#41;</span>
   <span style="color: #8655d6;">&#125;</span>
@@ -17,20 +17,19 @@
     <span style="color: #8655d6;">&#41;</span>
   <span style="color: #8655d6;">&#125;</span>
   </pre>
-</article>
 </template>
 
 <style scoped>
 .code {
-  font-family: monospace;
   position: relative;
   background-color: var(--color10);
+  margin: 0;
   padding: 0.5rem;
   line-height: 125%;
   border-radius: 0.5rem;
 }
 .code:before {
-  color: var(--color30);
+  color: #888;
   content: 'Code';
   display: inline-block;
   font-size: 0.8rem;
