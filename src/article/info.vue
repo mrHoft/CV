@@ -1,27 +1,31 @@
+<script setup lang="ts">
+import { contacts } from '~/const.ts'
+</script>
+
 <template>
-  <article id="info" class="info">
+  <article id="info" :class="$style.info">
     <div>
-      <div class="title">
+      <div :class="$style.title">
         <h1>Nikolay Hoft</h1>
         <span>1984</span>
       </div>
 
       <p>Krasnodar, ready to relocate</p>
       <p>Frontend, Gamedev</p>
-      <ul id="contacts" class="contacts">
+      <ul id="contacts" :class="$style.contacts">
         <h2>Contacts:</h2>
-        <li><img src="/icons/email.svg" /><a href="mailto:Hoft@daytec.ru">hoft@daytec.ru</a></li>
-        <li><img src="/icons/telegram.svg" /><a href="https://t.me/mrHoft">@mrHoft</a></li>
-        <li><img src="/icons/discord.svg" /><a href="https://discord.gg/mr.hoft">mr.hoft</a></li>
-        <li><img src="/icons/github.svg" /><a href="https://github.com/mrHoft">mrHoft</a></li>
+        <li v-for="({ icon, title, href }, index) in contacts" :key="index">
+          <img :src="icon" />
+          <a :href="href" target="_blank">{{ title }}</a>
+        </li>
       </ul>
     </div>
 
-    <img class="photo" title="Author logo" src="/icons/tech_ninja.svg" alt="photo" />
+    <img :class="$style.photo" title="Author logo" src="/icons/tech_ninja.svg" alt="photo" />
   </article>
 </template>
 
-<style scoped>
+<style module>
 .info {
   display: flex;
   flex-direction: row;

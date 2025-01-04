@@ -63,7 +63,7 @@
       </li>
       <li>
         <div class="diagram skill-aws"><img src="/icons/aws.svg" /></div>
-        <p>AWS</p>
+        <p>aws</p>
       </li>
     </ul>
     <div class="align-center">

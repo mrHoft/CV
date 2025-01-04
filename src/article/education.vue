@@ -1,30 +1,28 @@
+<script setup lang="ts">
+import { edu, lang } from '~/const.ts'
+</script>
+
 <template>
-<article id="edu" class="edu">
-  <h2>Education:</h2>
-  <ul>
-    <li>RSSchool. <a href="https://app.rs.school/certificate/nehax0ao" target="_blank">Frontend 2023Q4</a>.</li>
-    <li>RSSchool. <a href="https://app.rs.school/certificate/cr6ohdtm" target="_blank">Frontend 2023Q2</a>.</li>
-    <li>Y.Practicum. <a href="https://drive.google.com/file/d/1LhYPyJ304XXBK46uxsqkpT5WMUCzunlK/view" target="_blank">Middle frontend-developer</a>.</li>
-    <li>
-      PSKhK УТ-1 470695. The “programmer” certificate was received along with a diploma of a geodesist at the initiative of a computer science teacher for
-      winning Olympiads.
-    </li>
-    <li>
-      Self-development: W3Schools, EnglishClass101, freecodecamp.org, codewars.com, learn.javascript, javascript.info and other. My hand book is MDN Web Docs.
-    </li>
-  </ul>
-</article>
-<article id="lang" class="lang">
-  <h2>Languages:</h2>
-  <ul>
-    <li>Russian (native)</li>
-    <li>English (B1)</li>
-  </ul>
-</article>
+  <article id="edu" :class="$style.edu">
+    <h2>Education:</h2>
+    <ul>
+      <li v-for="({ title, href, course, desc }, index) in edu" :key="index">
+        <span>{{ title }}: </span>
+        <a v-if="course" :href="href" target="_blank"> {{ course }}. </a>
+        <span v-if="desc">{{ desc }}</span>
+      </li>
+    </ul>
+  </article>
+
+  <article id="lang" :class="$style.lang">
+    <h2>Languages:</h2>
+    <ul>
+      <li v-for="(item, index) in lang" :key="index">{{ item }}</li>
+    </ul>
+  </article>
 </template>
 
-
-<style scoped>
+<style module>
 .edu ul,
 .lang ul {
   position: relative;
