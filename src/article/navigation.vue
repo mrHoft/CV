@@ -45,6 +45,7 @@ export default {
 .nav img {
   width: 2rem;
   padding: 0.5rem;
+  filter: invert(var(--color-scheme));
 }
 .nav li:hover svg,
 .nav li:hover img {
@@ -60,7 +61,7 @@ export default {
   padding: 1.5rem 2rem;
   border-radius: 0 2rem 2rem 0;
   transform: translateX(4rem);
-  margin-top: -0.5rem;
+  margin-top: -0.75rem;
   white-space: nowrap;
   letter-spacing: 1px;
   visibility: hidden;

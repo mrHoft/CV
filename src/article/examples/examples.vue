@@ -14,7 +14,7 @@ const items = [
         class: [styles.card, item.left ? styles.card_left : styles.card_right],
         style: `background-image: url(${item.src})`,
       },
-      h('div', { class: styles.card__text }, item.left ?? item.right),
+      h('div', { class: styles.card__text }, [h('h2', { innerHTML: item.title }), item.left ?? item.right]),
     ),
   ),
   CodeExample,
@@ -37,7 +37,6 @@ const items = [
   height: 100%;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  padding: 1rem;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -50,10 +49,14 @@ const items = [
   justify-content: flex-end;
 }
 .card__text {
-  max-width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
   box-sizing: border-box;
   background-color: #0008;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 1rem 2rem;
 }
 </style>

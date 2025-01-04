@@ -1,48 +1,48 @@
 export const menu: Record<string, { title: string; icon: string }> = {
   info: {
     title: 'Contacts',
-    icon: '/icons/info.svg',
+    icon: './icons/info.svg',
   },
   about: {
     title: 'About',
-    icon: '/icons/about.svg',
+    icon: './icons/about.svg',
   },
   skills: {
     title: 'Tech Stack',
-    icon: '/icons/gear.svg',
+    icon: './icons/gear.svg',
   },
   exp: {
     title: 'Experience',
-    icon: '/icons/exp.svg',
+    icon: './icons/exp.svg',
   },
   edu: {
     title: 'Education',
-    icon: '/icons/edu.svg',
+    icon: './icons/edu.svg',
   },
   examples: {
     title: 'Examples',
-    icon: '/icons/slider.svg',
+    icon: './icons/slider.svg',
   },
 }
 
 export const contacts = [
   {
-    icon: '/icons/email.svg',
+    icon: './icons/email.svg',
     href: 'mailto:Hoft@daytec.ru',
     title: 'Hoft@daytec.ru',
   },
   {
-    icon: '/icons/telegram.svg',
+    icon: './icons/telegram.svg',
     href: 'https://t.me/mrHoft',
     title: '@mrHoft',
   },
   {
-    icon: '/icons/discord.svg',
+    icon: './icons/discord.svg',
     href: 'https://discord.gg/mr.hoft',
     title: 'mr.hoft',
   },
   {
-    icon: '/icons/github.svg',
+    icon: './icons/github.svg',
     href: 'https://github.com/mrHoft',
     title: 'mrHoft',
   },
