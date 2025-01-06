@@ -8,7 +8,7 @@ import { exp } from '~/const.ts'
     <table class="table">
       <thead>
         <tr>
-          <td style="width: 6rem">Period</td>
+          <td :class="$style.period">Period</td>
           <td>Description</td>
         </tr>
       </thead>
@@ -61,5 +61,15 @@ import { exp } from '~/const.ts'
   background: var(--color40);
   transform: translate(-50%, 100%);
   clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+.period {
+  width: 6rem;
+}
+
+@media (max-width: 640px) {
+  .period {
+    width: unset;
+  }
 }
 </style>
