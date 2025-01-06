@@ -122,7 +122,7 @@
   border-radius: 50%;
   top: 50%;
   margin-top: -1.5em;
-  background-color: #000;
+  background-color: var(--color40);
   box-shadow: 0 4px 4px #0008, 0 0 8px #0004;
   background-size: 1em;
   background-position: center;
@@ -151,6 +151,7 @@
   padding: 0;
   width: 100%;
   text-align: center;
+  pointer-events: none;
 }
 
 .slider__nav_item {
@@ -158,14 +159,15 @@
   width: 0.75rem;
   height: 0.75rem;
   margin: 0 0.5em;
-  border: 0.125rem solid var(--color00);
+  border: 0.125rem solid var(--color40);
   border-radius: 50%;
-  background-color: var(--color00);
+  background-color: var(--color40);
   transition: all 0.15s linear;
+  pointer-events: all;
 }
 .slider__nav_item:hover {
-  background-color: var(--color30);
-  border-color: var(--color30);
+  background-color: var(--color50);
+  border-color: var(--color50);
 }
 
 .slider__nav_item label {
