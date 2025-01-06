@@ -11,6 +11,10 @@ export const menu: Record<string, { title: string; icon: string }> = {
     title: 'Tech Stack',
     icon: './icons/gear.svg',
   },
+  examples: {
+    title: 'Examples',
+    icon: './icons/slider.svg',
+  },
   exp: {
     title: 'Experience',
     icon: './icons/exp.svg',
@@ -18,10 +22,6 @@ export const menu: Record<string, { title: string; icon: string }> = {
   edu: {
     title: 'Education',
     icon: './icons/edu.svg',
-  },
-  examples: {
-    title: 'Examples',
-    icon: './icons/slider.svg',
   },
 }
 
@@ -247,3 +247,107 @@ export const edu: TEdu[] = [
 ]
 
 export const lang = ['Russian (native)', 'English (B1)']
+
+export const skills = [
+  {
+    icon: '/icons/html.svg',
+    stack: ['HTML5'],
+    value: 85,
+  },
+  {
+    icon: '/icons/css3.svg',
+    stack: ['CSS3', 'SCSS', 'CSS in JS'],
+    value: 90,
+  },
+  {
+    icon: '/icons/js.svg',
+    stack: ['JavaScript', 'TypeScript'],
+    value: 80,
+  },
+  {
+    icon: '/icons/nodejs.svg',
+    stack: ['Node.js', 'Express.js', 'Deno.js'],
+    value: 70,
+  },
+  {
+    icon: '/icons/react.svg',
+    stack: ['React', 'Redux', 'Next'],
+    value: 90,
+  },
+  {
+    icon: '/icons/vue.svg',
+    stack: ['Vue', 'Vuex', 'Nuxt'],
+    value: 60,
+  },
+  {
+    icon: '/icons/webpack.svg',
+    stack: ['Webpack', 'Rollup', 'Vite'],
+    value: 85,
+  },
+  {
+    icon: '/icons/test.svg',
+    stack: ['Chai', 'Mocha', 'Jest'],
+    value: 60,
+  },
+  {
+    icon: '/icons/sql.svg',
+    stack: ['Postgres'],
+    value: 60,
+  },
+  {
+    icon: '/icons/docker.svg',
+    stack: ['Docker', 'Compose'],
+    value: 75,
+  },
+  {
+    icon: '/icons/linux.svg',
+    stack: ['Unix systems', 'Nginx'],
+    value: 75,
+  },
+  {
+    icon: '/icons/cloud.svg',
+    stack: ['aws', 'Strapi'],
+    value: 50,
+  },
+]
+
+type TProject = {
+  id: number
+  title: string
+  src: string
+  left?: string
+  right?: string
+  href: string
+}
+
+export const projects: TProject[] = [
+  {
+    id: 1,
+    title: 'Wrenched',
+    src: './projects/wrenched.jpg',
+    href: 'https://mrhoft.github.io/wrenched/',
+    left: 'Nonograms game',
+  },
+  {
+    id: 2,
+    title: 'Cavex CRM',
+    src: './projects/cavex.jpg',
+    right:
+      'Lightweight and fast crossplatform CRM: Production, Stock, Defects, Repairs, Returns, Catalog, Sales, Orders, Bids, Shipments, Accounting, Management.',
+    href: 'https://app.nobey.ru',
+  },
+  {
+    id: 3,
+    title: 'Prozhito',
+    src: './projects/prozhito.jpg',
+    href: 'https://prozhito.org/',
+    left: 'A project on documentary heritage and public archiving.',
+  },
+  {
+    id: 4,
+    title: 'Greet card',
+    src: './projects/greetcard.jpg',
+    href: 'https://greet-card.vercel.app/',
+    right: 'A greeting card with a message and an intaractive animation.',
+  },
+]
