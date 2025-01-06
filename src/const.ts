@@ -237,7 +237,7 @@ export const edu: TEdu[] = [
     course: 'Middle frontend-developer',
   },
   {
-    title: 'PSKhK УТ-1',
+    title: 'PSKhK UT-1',
     desc: 'The “programmer” certificate was received along with a diploma of a geodesist at the initiative of a computer science teacher for winning Olympiads.',
   },
   {
@@ -250,62 +250,62 @@ export const lang = ['Russian (native)', 'English (B1)']
 
 export const skills = [
   {
-    icon: '/icons/html.svg',
+    icon: './icons/html.svg',
     stack: ['HTML5'],
     value: 85,
   },
   {
-    icon: '/icons/css3.svg',
+    icon: './icons/css3.svg',
     stack: ['CSS3', 'SCSS', 'CSS in JS'],
     value: 90,
   },
   {
-    icon: '/icons/js.svg',
+    icon: './icons/js.svg',
     stack: ['JavaScript', 'TypeScript'],
     value: 80,
   },
   {
-    icon: '/icons/nodejs.svg',
+    icon: './icons/nodejs.svg',
     stack: ['Node.js', 'Express.js', 'Deno.js'],
     value: 70,
   },
   {
-    icon: '/icons/react.svg',
+    icon: './icons/react.svg',
     stack: ['React', 'Redux', 'Next'],
     value: 90,
   },
   {
-    icon: '/icons/vue.svg',
+    icon: './icons/vue.svg',
     stack: ['Vue', 'Vuex', 'Nuxt'],
     value: 60,
   },
   {
-    icon: '/icons/webpack.svg',
+    icon: './icons/webpack.svg',
     stack: ['Webpack', 'Rollup', 'Vite'],
     value: 85,
   },
   {
-    icon: '/icons/test.svg',
+    icon: './icons/test.svg',
     stack: ['Chai', 'Mocha', 'Jest'],
     value: 60,
   },
   {
-    icon: '/icons/sql.svg',
+    icon: './icons/sql.svg',
     stack: ['Postgres'],
     value: 60,
   },
   {
-    icon: '/icons/docker.svg',
+    icon: './icons/docker.svg',
     stack: ['Docker', 'Compose'],
     value: 75,
   },
   {
-    icon: '/icons/linux.svg',
+    icon: './icons/linux.svg',
     stack: ['Unix systems', 'Nginx'],
     value: 75,
   },
   {
-    icon: '/icons/cloud.svg',
+    icon: './icons/cloud.svg',
     stack: ['aws', 'Strapi'],
     value: 50,
   },
