@@ -3,7 +3,7 @@ import { exp } from '~/const.ts'
 </script>
 
 <template>
-  <article id="exp" class="exp">
+  <article id="exp" :class="$style.exp">
     <h2>Experience:</h2>
     <table class="table">
       <thead>
@@ -31,7 +31,7 @@ import { exp } from '~/const.ts'
   </article>
 </template>
 
-<style scoped>
+<style module>
 .table {
   width: 100%;
   border-bottom: 1px solid var(--color10);

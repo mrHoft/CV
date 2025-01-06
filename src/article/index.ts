@@ -1,4 +1,3 @@
-export { default as Navigation } from './navigation.vue'
 export { default as Info } from './info.vue'
 export { default as About } from './about.vue'
 export { default as Skills } from './skills.vue'

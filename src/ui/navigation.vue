@@ -33,6 +33,12 @@ export default {
   z-index: 10;
 }
 
+@media (max-width: 640px) {
+  .aside {
+    display: none;
+  }
+}
+
 .nav a,
 .nav a:hover {
   color: var(--color100);

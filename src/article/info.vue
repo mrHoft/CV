@@ -20,8 +20,10 @@ import { contacts } from '~/const.ts'
         </li>
       </ul>
     </div>
-
-    <img :class="$style.photo" title="Author logo" src="/icons/tech_ninja.svg" alt="photo" />
+    <div :class="$style.logo">
+      <img :class="$style.avatar" src="/icons/tech_ninja.svg" alt="avatar" />
+      <img :class="$style.photo" src="/images/photo.jpg" alt="photo" />
+    </div>
   </article>
 </template>
 
@@ -53,10 +55,29 @@ import { contacts } from '~/const.ts'
   filter: invert(var(--color-scheme));
 }
 
+.logo {
+  position: relative;
+  width: calc(min(30vw, 16rem));
+  height: calc(min(30vw, 16rem));
+}
+
+.avatar,
 .photo {
-  height: 100%;
-  aspect-ratio: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   border-radius: 50%;
   box-shadow: 3px 3px 3px #0008;
+  transition: opacity 0.25s ease-in;
+}
+.photo {
+  opacity: 0;
+}
+.logo:hover .avatar {
+  opacity: 0;
+}
+.logo:hover .photo {
+  opacity: 1;
 }
 </style>

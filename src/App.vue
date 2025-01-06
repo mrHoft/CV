@@ -1,30 +1,29 @@
 <script setup lang="ts">
-import { Navigation, Info, About, Skills, Experience, Education, CodeExample, Examples } from './article'
+import Navigation from './ui/navigation.vue'
+import Mirror from './ui/miror.vue'
+import { Info, About, Skills, Experience, Education, CodeExample, Examples } from './article'
 </script>
 
 <template>
   <Navigation />
-  <div :class="$style.content">
+  <div>
     <main>
       <Info />
       <About />
       <Skills />
+      <Examples />
       <Experience />
       <Education />
-      <Examples />
     </main>
-    <footer class="footer">
+    <footer :class="$style.footer">
       <span>© 2025 <a href="https://github.com/mrHoft">mrHoft</a></span>
     </footer>
   </div>
+  <Mirror />
 </template>
 
 <style module>
-.content {
-  width: 100%;
-}
-
-footer {
+.footer {
   box-sizing: border-box;
   margin: 0;
   padding: 1em;
@@ -34,7 +33,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
-footer img {
+.footer img {
   filter: invert(var(--color-scheme));
 }
 </style>
